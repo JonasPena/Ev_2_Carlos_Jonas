@@ -19,7 +19,7 @@
         <h1>Crud Ciudad</h1>
         <menu >
             <a href="intranet.jsp">
-            <menuitem >Usuarios</menuitem>
+            <menuitem >Inicio</menuitem>
             </a> 
         </menu>
         <form action="ControladorCiudad" method="post">

@@ -33,7 +33,7 @@ public class JugadorDAO extends Conexion {
     }
 
     public ArrayList<Jugador> obtenerJugador() throws ClassNotFoundException, SQLException{
-        String sentencia = "select * from usuario";
+        String sentencia = "select * from jugador";
         try{
         conectar();
         PreparedStatement ps= obtenerPS(sentencia);
@@ -51,7 +51,7 @@ public class JugadorDAO extends Conexion {
         }
     }
     public Jugador obtenerJugador(String id) throws ClassNotFoundException, SQLException{
-        String sentencia = "select * from usuario where id = ?";
+        String sentencia = "select * from jugador where id = ?";
         try{
         conectar();
         PreparedStatement ps= obtenerPS(sentencia);

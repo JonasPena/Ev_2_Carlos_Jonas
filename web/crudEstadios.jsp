@@ -21,14 +21,8 @@
         <h1>Crud Estadio</h1>
         <menu >
             <a href="intranet.jsp">
-            <menuitem >Usuarios</menuitem>
-            </a> |
-            <a href="crudProductos.jsp">
-            <menuitem >Productos</menuitem>
-            </a> | 
-            <a href="crudEstados.jsp">
-            <menuitem >Estados</menuitem>
-            </a>
+            <menuitem >Inicio</menuitem>
+            </a> 
         </menu>
         <form action="ControladorEstadio" method="post">
             <table>
@@ -67,12 +61,11 @@
         <table>
             <tr>
              
-                <td>Nombre</td>
+              <td>Nombre</td>
               <td>Ciudad</td>
-                <td>Cantidad</td>
-                            
-                <td>Modificar</td>
-                <td>Eliminar</td>
+                         
+              <td>Capacidad</td>
+               
             </tr>
             <% ArrayList<Estadio> estadios = new EstadioDAO().obtenerEstadios();
                for(Estadio p: estadios){               
