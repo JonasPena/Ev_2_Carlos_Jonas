@@ -5,7 +5,6 @@ public class Jugador {
     private String id;
     private String nombre;
     private String apellido;
-    private String password;
     private String FechaNacimiento;
     private String Posicion;
     private String Sueldo;
@@ -14,23 +13,19 @@ public class Jugador {
     
     
     
-    public Jugador(String id, String nombre, String apellido, String password,
+    public Jugador(String id, String nombre, String apellido,
             String FechaNacimiento,String Posicion,String Sueldo,String EquipoActual) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.password = password;
         this.FechaNacimiento = FechaNacimiento;
         this.Posicion = Posicion;
         this.Sueldo = Sueldo;
         this.EquipoActual = EquipoActual;
     }
 
-    public Jugador(String id, String password) {
-        this.id = id;
-        this.password = password;
-    }
-
+   
+    
     public Jugador() {
     }
 
